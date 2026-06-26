@@ -1,0 +1,2 @@
+model,f1_macro,roc_auc
+Baseline (LogReg),0.8902945125910754,0.9608865727819711

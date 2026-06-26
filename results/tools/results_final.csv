@@ -1,0 +1,3 @@
+Модель,F1-macro,ROC-AUC,Улучшение F1
+Baseline (LogReg + TF-IDF),0.9093,0.975,—
+"Improved (LinearSVC, C=0.1)",0.9031,0.9618,+-0.62%
