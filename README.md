@@ -19,44 +19,44 @@ toxic-comment-classifier/
 ├── requirements.txt
 ├── .gitignore
 ├── data/
-│   └── .gitkeep        # чтобы папка попала в git
+│   └── dataset
 ├── notebooks/
 │   ├── 01_eda.ipynb
 │   ├── 02_baseline.ipynb
 │   └── 03_improved_model.ipynb
-└── src/
-    ├── data/
-    │   └── preprocessing.py
+└── results
+    ├── visualization/
+    │   └── 1.png
+        ├── 2.png
+        ├── 3.png
+        ├── 4.png
+        ├── 5.png
+        ├── 6.png
+        ├── 7.png
+        └── 8.png
     └── models/
-        └── train.py
+        └── model_baseline.pkl
+        ├── model improved.pkl
+    └── tools/
+    │   └── results.png
+        ├── results_final.png
+        ├── test_indices.png
+        ├── train_indices.png
+        └── vectorizer.pkl
 
 ```
 
-## Запуск
-
-### В Google Colab
-1. Откройте `toxic_comment_classifier.ipynb` через Google Colab.
-2. Поместите `data/dataset.txt` в папку `data/` в Colab-сессии (или смонтируйте Google Drive).
-3. Запустите все ячейки последовательно.
-
-### Локально
-```bash
-git clone https://github.com/ritaveab/toxic-comment-classifier.git
-cd toxic-comment-classifier
-pip install -r requirements.txt
-jupyter notebook toxic_comment_classifier.ipynb
-```
 
 ## Результаты
 
-| Модель | F1-macro | F1 (токсичный) |
+| Модель | F1-macro | ROC-AUC |
 |--------|----------|----------------|
-| Baseline: LogReg + TF-IDF (слова) | ~0.87 | ~0.80 |
-| Improved: LinearSVC + TF-IDF (слова + символы) | ~0.90 | ~0.85 |
+| Baseline: LogReg + TF-IDF (слова) | ~0.91 | ~0.98 |
+| Improved: LinearSVC + TF-IDF (слова + символы) | ~0.90 | ~0.96 |
 
 ## Авторы
 
 | Участник | Вклад |
 |----------|-------|
-| Баева Маргарита | EDA, препроцессинг, baseline модель, анализ ошибок, README |
+| Баева Маргарита | EDA, препроцессинг, анализ ошибок, README, работа с github |
 | Быкова Анна | Улучшенная модель, визуализация, baseline модель, анализ ошибок |
