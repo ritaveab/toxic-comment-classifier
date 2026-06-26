@@ -15,19 +15,21 @@
 
 ```
 toxic-comment-classifier/
-├── data/
-│   └── dataset.txt          # датасет (FastText-формат)
-├── src/
-│   ├── data/
-│   │   └── preprocess.py    # функции очистки текста
-│   └── models/
-│       └── train.py         # обучение и сохранение моделей
-├── outputs/                 # графики EDA и сравнения моделей
-├── models/                  # сохранённые .pkl артефакты
-├── toxic_comment_classifier.ipynb  # основной ноутбук (Google Colab)
+├── README.md
 ├── requirements.txt
 ├── .gitignore
-└── README.md
+├── data/
+│   └── .gitkeep        # чтобы папка попала в git
+├── notebooks/
+│   ├── 01_eda.ipynb
+│   ├── 02_baseline.ipynb
+│   └── 03_improved_model.ipynb
+└── src/
+    ├── data/
+    │   └── preprocessing.py
+    └── models/
+        └── train.py
+
 ```
 
 ## Запуск
