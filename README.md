@@ -38,10 +38,10 @@ toxic-comment-classifier/
         └── model_baseline.pkl
         ├── model improved.pkl
     └── tools/
-    │   └── results.png
-        ├── results_final.png
-        ├── test_indices.png
-        ├── train_indices.png
+    │   └── results.csv
+        ├── results_final.csv
+        ├── test_indices.csv
+        ├── train_indices.csv
         └── vectorizer.pkl
 
 ```
